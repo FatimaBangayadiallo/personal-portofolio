@@ -181,85 +181,11 @@ p {
 Navbar
 ===============
 */
- .nav-links{
-  display: none;
- }
- .nav{
-  /* background-color: red; */
-  height: 5rem;
-  padding: 1rem;
-  display: grid;
-  align-items: center; 
-  /* we are adding the transition because later we will make it position fixed */
-  transition: var(--transition);
 
- }
-.nav-center{
-  width: 100%;
-  /* border: 2px solid yellow; */
-  max-width: 1170px;
-  margin: 0 auto;
-  
-}
-.nav-header{
- display: grid;
- grid-template-columns: auto 1fr;
- /* column-gap: 2rem; */
- /* border: 2px solid black; */
- align-items: center;
-}
-.nav-btn{
-  background-color: transparent;
-  border-color: transparent;
-  font-size: 2rem;
-  justify-self: end;
-  color: var(--clr-primary-5);
-  cursor: pointer;
-}
-/* nav bar on the bigger screen */
-@media screen and (min-width: 768px){
-  .nav{
-    background-color: var(--clr-primary-10);
-  }
-  .nav-btn{
-    display: none;
-  }
-  .nav-links{
-    justify-self: end;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-self: end;
-    column-gap: 2rem;
-  }
-
-  .nav-link{
-    color: var(--clr-grey-1);
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-    transition: var(--transition);
-  }
-  .nav-link:hover{
-    color: var(--clr-primary-5)s;
-  }
-  
-  .nav-center{
-    /* background-color: red; */
-    display: grid;
-    grid-template-columns:  auto 1fr; 
-    align-items: center;
-  }
-  
-  
-}
-.navbar-fixed{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--clr-white);
-  box-shadow: var(--light-shadow);
-}
+.nav{
+  border: 1px solid red;
+} 
+ 
 
 /*
 =============== 
@@ -267,110 +193,12 @@ Sidebar
 ===============
 */
 
-.sidebar{
-  /* background-color: darkcyan; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 4;
-  background-color: var(--clr-grey-10);
-  display: grid;
-  /* align-items: center;
-  justify-content: center; */
-  place-items: center;
-  transition: var(--transition);
-  /* add later to hide the side bar */
-  transform: translateX(-100%);
-  
-}
-.show-sidebar{
-  transform: translateX(0);
-}
-.close-btn{
-  position: absolute;
-  top:1rem;
-  right: 0.5rem;
-  font-size: 3rem;
-  background-color: transparent;
-  border: transparent;
-  color: #bb2525 ;
-  cursor: pointer;
-  transition:  var(--transition);
-}
-.close-btn:hover{
-  transform: rotate(90deg);
-  color: #e66b6b;
-  
-}
-.sidebar-links{
-  text-align: center;
-  /* background-color: yellow; */
-}
-.side-link{
-  font-size: 2rem;
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  text-transform: capitalize;
-  color: var(--clr-grey-5);
-  transition: var(--transition);
-  letter-spacing: var(--spacing);
-}
-.side-link:hover{
-  color: var(--clr-primary-5);
-  transform: scale(1.1);
-}
-
-.social-icons{
-  display: grid;
-  margin-top: 3rem;
-  width: 20rem;
-  grid-template-columns: repeat(5, 1fr);
-  /* column-gap: 2rem; */
-  /* border: 1px solid red; */
-  justify-items: center;
-}
-.social-icons a{
-  font-size: 1.5rem;
-  color: var(--clr-grey-1);
-  transition: var(--transition);
-}
-.social-icons a:hover{
-  color: var(--clr-primary-5);
-}
-
 /*
 =============== 
 Hero
 ===============
 */
 /* underline added to globals */
-.hero .underline{
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-.hero-img{
-  display: none;
-}
-.hero{
-  background-color: var(--clr-primary-10);
-
-}
-.hero-center{
-  min-height: calc(100vh - 5rem);
-  display: grid;
-  place-items: center;
-}
-.hero-info h4{
-  color: var(--clr-grey-5);
-}
-.hero-icons{
-  justify-items: start;
-}
-.hero-btn{
-  margin-top:1.25rem
-}
 
 
 /*
